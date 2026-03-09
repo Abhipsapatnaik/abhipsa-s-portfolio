@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abhipsa Patnaik | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(0,0,0,0.4);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        nav h1 {
+            font-size: 22px;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 8%;
+            margin-top: 60px;
+        }
+
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .hero-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #38bdf8;
+            box-shadow: 0 0 40px #38bdf8;
+            transition: 0.4s;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-text h2 {
+            font-size: 42px;
+        }
+
+        .hero-text span {
+            color: #38bdf8;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            background: #38bdf8;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 8%;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Contact */
+        .contact p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0b1220;
+            color: #94a3b8;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text h2 {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Abhipsa</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-container">
+
+            <div class="hero-image">
+                <img src="profile.jpeg" alt="Abhipsa Patnaik">
+            </div>
+
+            <div class="hero-text">
+                <h2>Hello, I'm <span>Abhipsa Patnaik</span></h2>
+                <p>A passionate Front End Developer & Python Enthusiast</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <h3>About Me</h3>
+        <p>
+            Hi, I’m Abhipsa Patnaik, a passionate and creative Front-End Developer who loves building clean, responsive, and user-friendly websites. I specialize in transforming ideas into visually appealing and interactive digital experiences.
+I have hands-on experience with HTML, CSS, Bootstrap, and basic JavaScript, and I enjoy designing modern layouts that provide smooth user experiences across all devices. I focus on writing structured, efficient code and continuously improving my design and development skills.
+I am always eager to learn new technologies, explore innovative UI/UX trends, and grow as a developer in the ever-evolving world of web development.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h3>Skills</h3>
+        <div class="skills-list">
+            <div class="skill">Front-End Development (HTML, CSS, Bootstrap)</div>
+            <div class="skill">Python Programming</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">NLP</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="projects-container">
+
+            <div class="project">
+                <h4>Disease Prediction System using Machine Learning</h4>
+                <p>Built a Machine Learning-based Disease Prediction System that analyzes user symptoms and predicts possible diseases. Designed a responsive frontend and integrated the ML model using Python and Scikit-learn.</p>
+            </div>
+
+            <div class="project">
+                <h4>Spam Email Detection using Machine Learning</h4>
+                <p>Developed a Spam Email Detection system that classifies emails as spam or not spam using Machine Learning techniques. The model analyzes email content and predicts whether it is legitimate or malicious with high accuracy.</p>
+            </div>
+
+            <div class="project">
+                <h4>Face Recognition Based Attendance System</h4>
+                <p>Developed an automated attendance system using face recognition technology that detects and identifies individuals in real-time. The system captures facial features through a webcam, matches them with stored data, and records attendance accurately.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h3>Contact Me</h3>
+        <p>Email: abhipsapatnaik27@email.com</p>
+        <p>Phone: +91 76089 68106</p>
+        <p>Location: Rayagada, Odisha</p>
+    </section>
+
+    <footer>
+        © 2026 Abhipsa Patnaik | All Rights Reserved
+    </footer>
+
+</body>
+</html>
